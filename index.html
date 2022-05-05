@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer type="module" src="script.js"></script>
+    <title>Fire Group</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+
+      form {
+        padding: 4.8rem;
+        max-width: 80rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 1.2rem;
+      }
+
+      label {
+        width: 10rem;
+        display: inline-block;
+      }
+
+      .text {
+        height: 10rem;
+        width: 25rem;
+      }
+
+      .submit {
+        border: none;
+        background-color: rgb(16, 92, 128);
+        padding: 1.2rem 2.4rem;
+        color: #fff;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .clear {
+        border: none;
+        background-color: rgb(128, 16, 16);
+        padding: 1.2rem 2.4rem;
+        color: #fff;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="name">Họ và tên</label>
+        <input class="name" type="text" id="name" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input class="email" type="email" id="email" />
+      </div>
+      <div>
+        <label for="sdt">Số điện thoại</label>
+        <input class="sdt" type="tel" id="sdt" />
+      </div>
+      <div>
+        <input
+          class="text"
+          class="text"
+          type="text"
+          placeholder="Nội dung liên hệ"
+        />
+      </div>
+      <div>
+        <button type="submit" class="submit">Submit</button>
+        <button type="clear" class="clear">Clear</button>
+      </div>
+    </form>
+  </body>
+</html>
